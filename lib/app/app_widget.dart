@@ -1,3 +1,4 @@
+import 'package:cep_view/app/res/mapTheme.dart';
 import 'package:cep_view/app/views/app_view.dart';
 import 'package:flutter/material.dart';
 
@@ -6,7 +7,8 @@ class AppWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      theme: mapTheme.theme,
       home: AppView(),
     );
   }
